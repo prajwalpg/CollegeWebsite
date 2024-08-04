@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Website Template</title>
+
+    <!-- font Awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation start -->
+    <nav>
+      <img src="img/logo.svg" class="logo" alt="" />
+
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <img src="img/menu.png" id="menu-btn" alt="" />
+      </div>
+    </nav>
+    <!-- Navigation ends -->
+
+    <!-- Hero section starts from here -->
+    <section id="home">
+      <h2>Computer Science and Engineering<br />(Allied Branches)</h2>
+      <p>"Empowering Innovation Through Technology"</p>
+      <div class="btn">
+        <a href="courses.html" class="yellow">Visit Courses</a>
+      </div>
+    </section>
+    <!-- Hero section ends from here -->
+
+    <!-- Features section starts from here -->
+    <section id="features">
+      <h1>Awesome Facility</h1>
+
+      <div class="fea-base">
+        <div class="fea-box">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Scholorship Facility</h3>
+          <p>Unlocking Opportunities for a Brighter Future</p>
+        </div>
+
+        <div class="fea-box">
+          <i class="fa-solid fa-book-bookmark"></i>
+          <h3>Hostel Facility</h3>
+          <p>Comfort and Convenience Under One Roof</p>
+        </div>
+
+        <div class="fea-box">
+          <i class="fas fa-award"></i>
+          <h3>All Indian Rank</h3>
+          <p>Benchmarking Success Across India</p>
+        </div>
+      </div>
+    </section>
+    <!-- Features section ends from here -->
+
+    <!-- Registration section starts from here -->
+    <section id="registration">
+      <div class="reminder">
+        <h1>Registration To Get It</h1>
+
+        <div class="time">
+          <div class="date">
+            180 <br />
+            Days
+          </div>
+          <div class="date">
+            23 <br />
+            Hours
+          </div>
+          <div class="date">
+            06 <br />
+            Minutes
+          </div>
+          <div class="date">
+            58 <br />
+            Seconds
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Registration section ends from here -->
+
+    <!-- Footer section starts from here -->
+    
+    <!-- Footer section ends from here -->
+
+    <script>
+      // Show menu links on burger click
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      // Hide navbar on click function
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

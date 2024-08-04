@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Courses</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/logo.svg" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="courses.html" class="active">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Hero section starts from here -->
+	<section id="about-home">
+		<h2>
+			Courses
+		</h2>
+	</section>
+	<!-- Hero section ends from here -->
+
+		<!-- Courses section starts from here -->
+	<section id="course">
+		<h1>Allied Courses</h1>
+
+		<div class="course-box">
+			<div onclick="window.location.href='course-inner.html'" class="courses">
+				<img src="img/z1.jpg" alt="">
+				<div class="details">
+					<a href="cse.html"><h6><br>Computer science and Engineering(CSE)</h6></a>
+				</div>
+				
+			</div>
+
+			<div class="courses">
+				<img src="img/z2.jpg" alt="">
+				<div class="details">				
+					<a href="aiml.html"><h6><br>Artificial Intelligence and Machine Learning(AI&ML)</h6></a>
+				</div>				
+			</div>
+			<div class="courses">
+				<img src="img/z3.jpg" alt="">
+				<div class="details">				
+					<a href="csbs.html">	<h6>Computer science and business system<br>(CSBS)</h6></a>
+				</div>
+				
+			</div>
+			<div class="courses">
+				<img src="img/z4.jpg" alt="">
+				<div class="details">		
+					<a href="ds.html"><h6>Computer science and Engineering (Data Science)</h6></a>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<!-- Courses section ends from here -->
+	<footer>
+		<div class="footer-col">
+			<h3>Company visited<br>2020</h3>
+			<li>Aarbee Structures Pvt Ltd.</li>
+			<li>Accenture</li>
+			<li>AGRIMA CONSTRUCTION</li>
+			<li>AERIES</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Company visited<br>2021</h3>
+			<li>Hitachi Energy: Internship</li>
+			<li>IBM Consulting</li>
+			<li>Java Learning Center</li>
+			<li>L&T Technology Services Limited</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Company visited<br>2022</h3>
+			<li>Maxeye software solutions</li>
+			<li>Niva Bupa Health Insurance</li>
+			<li>Palle Technologies</li>
+			<li>Qspiders.</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Company visited<br>2023</h3>
+			<li>Suprajit</li>
+			<li>Westline Shipping</li>
+			<li>Zenken</li>
+			<li>Toyota Kirloskar Motor Pvt. Ltd</li>
+		</div>
+
+
+		<div class="footer-col">
+			<h3>Updates</h3>
+			<p>You can trust us. we only send K-CET Cutoff.</p>
+
+			<div class="subscribe">
+				<input type="email" placeholder="Your email Address">
+				<a href="#" class="yellow">SUBSCRIBE</a>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>
+				Copyright @ 2024 All rights reserved | This template is made by <a href="https://www.linkedin.com/in/prajwal-pg-6ba947253/" target="_blank">Prajwal PG</a>
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>

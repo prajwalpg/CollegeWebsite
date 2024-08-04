@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Website Template</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+
+    <!-- JQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation start -->
+    <nav>
+      <img src="img/logo.svg" class="logo" alt="" />
+
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <img src="img/menu.png" id="menu-btn" alt="" />
+      </div>
+    </nav>
+    <!-- Navigation ends -->
+
+    <!-- Hero section starts from here -->
+    <section id="about-home">
+      <h2>Scholar at PES College of Engineering</h2>
+    </section>
+    <!-- Hero section ends from here -->
+
+    <!-- About section starts from here -->
+    <section id="about-container">
+      <div class="about-img">
+        <img src="img/ad.jpg" alt="" />
+      </div>
+      <div class="about-text">
+        <h2>Welcome to CodeFactory, Code Fearlessly,Innovate Relentlessly.</h2>
+        <p class="p1">
+          We are doing an internship, and this is our first opportunity to grow
+          professionally. Working alongside the experts, we will gain hands-on
+          experience and develop critical skills that are essential in today's
+          competitive landscape. Each brings unique insights and practical
+          knowledge, guiding us through real-world challenges and innovative
+          solutions. This internship is not just about learning but also about
+          building connections, understanding industry dynamics, and preparing
+          ourselves for a successful career. By immersing ourselves in this
+          environment, we are setting the foundation for future achievements and
+          professional excellence.
+        </p>
+        </div>
+      </div>
+    </section>
+    <!-- About section ends from here -->
+
+    <!-- Features section starts from here -->
+    <section id="features">
+      <h1>Domain Experts</h1>
+      
+      <div class="fea-box">
+        <i class="fas fa-award"></i>
+        <div class="fea-content">
+          <img src="img/praj.jpg" alt="Prajwal" />
+          <div class="text-content">
+            <h3>Prajwal PG</h3>
+            <p>4PS23CI402<br>IV(AI&ML)</p>
+            <a
+              href="https://www.linkedin.com/in/prajwal-pg-6ba947253/"
+              target="_blank"
+              class="linkedin-box"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="fea-base">
+        <div class="fea-box">
+          <i class="fas fa-graduation-cap"></i>
+          <div class="fea-content">
+            <img src="img/vin.jpg" alt="Vinay A S" />
+            <div class="text-content">
+              <h3>Vinay A S</h3>
+              <p>4PS23CI405<br>IV(AI&ML)</p>
+              <a
+                href="https://www.linkedin.com/in/vinay-as-44241a2a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                class="linkedin-box"
+              >
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fea-box">
+          <i class="fa-solid fa-book-bookmark"></i>
+          <div class="fea-content">
+            <img src="img/vik.jpg" alt="Vikas M N" />
+            <div class="text-content">
+              <h3>Vikas M N</h3>
+              <p>4PS22CI055<br>IV(AI&ML)</p>
+              <a
+                href="https://www.linkedin.com/home"
+                target="_blank"
+                class="linkedin-box"
+              >
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fea-box">
+          <i class="fas fa-award"></i>
+          <div class="fea-content">
+            <img src="img/adi.jpg" alt="Adithiya" />
+            <div class="text-content">
+              <h3>Adithiya</h3>
+              <p>4PS22CI001<br>IV(AI&ML)</p>
+              <a
+                href="https://www.linkedin.com/in/adi-adi-b33901266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                class="linkedin-box"
+              >
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <!-- Footer section ends from here -->
+
+    <script>
+      // Show menu links on burger click
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      // Hide navbar on click function
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>
